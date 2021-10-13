@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <CD>
+    <TITLE>Introduction to Computer Science Using Python</TITLE>
+    <ARTIST>Charles Dierbach</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1985</YEAR>
+  </CD>
+  <CD>
+    <TITLE>JavaScript: The Good Parts</TITLE>
+    <ARTIST>Douglas Crockford</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS Records</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1988</YEAR>
+  </CD>
+  <CD>
+    <TITLE>The Pragmatic Programmer</TITLE>
+    <ARTIST>Andrew Hunt; David Thomas</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>RCA</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1982</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Modern Operating Systems</TITLE>
+    <ARTIST>Andrew S. Tanenbaum</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Virgin records</COMPANY>
+    <PRICE>10.20</PRICE>
+    <YEAR>1990</YEAR>
+  </CD>
+  <CD>
+    <TITLE>Introduction to Algorithms</TITLE>
+    <ARTIST>Thomas H. Cormen</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>BMG</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1997</YEAR>
+  </CD>
+</CATALOG>

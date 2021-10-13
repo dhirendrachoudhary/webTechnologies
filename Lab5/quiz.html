@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Varsity | Home</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet'
+        type='text/css'>
+</head>
+
+<body>
+    <center>
+        <h2>Quiz:</h2>
+
+        <button type="button" onclick="loadXMLDoc()">Start Quiz</button>
+
+        <p id="question"></p>
+        <p id="option1"></p>
+        <p id="option2"></p>
+        <p id="option3"></p>
+        <p id="option4"></p>
+        <p id="demo"></p>
+
+        <center>
+            <button type="button" class="btn btn-default" aria-label="Left Align" onclick="loadXMLDoc()">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-default" aria-label="Right Align" onclick="next()">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </button>
+        </center>
+
+        <!-- <script>
+            var parser, xmlDoc;
+            
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(quiz,"text/xml");
+            x = xmlDoc.getElementsByTagName("ques");
+                op1 = xmlDoc.getElementsByTagName("option1");
+                op2 = xmlDoc.getElementsByTagName("option2");
+                op3 = xmlDoc.getElementsByTagName("option3");
+                op4 = xmlDoc.getElementsByTagName("option4");
+                for (i = 0; i < x.length; i++) {
+                    // txt += x[i].childNodes[0].nodeValue + "<br>";
+                    document.getElementById("question").innerHTML = x[i].childNodes[0].nodeValue;
+                    document.getElementById("option1").innerHTML = op1[i].childNodes[0].nodeValue;
+                    document.getElementById("option2").innerHTML = op2[i].childNodes[0].nodeValue;
+                    document.getElementById("option3").innerHTML = op3[i].childNodes[0].nodeValue;
+                    document.getElementById("option4").innerHTML = op4[i].childNodes[0].nodeValue;
+
+                }
+            
+            // document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script> -->
+
+        <script>
+            function loadXMLDoc() {
+                var xmlhttp = new XMLHttpRequest();
+                parser = new DOMParser();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        myFunction(this);
+                    }
+                };
+                xmlhttp.open("GET", "quiz.xml", true);
+                xmlhttp.send();
+            }
+
+            function myFunction(xml) {
+                var x, i, xmlDoc, txt;
+                xmlDoc = xml.responseXML;
+                x = xmlDoc.getElementsByTagName("ques");
+                op1 = xmlDoc.getElementsByTagName("option1");
+                op2 = xmlDoc.getElementsByTagName("option2");
+                op3 = xmlDoc.getElementsByTagName("option3");
+                op4 = xmlDoc.getElementsByTagName("option4");
+                for (i = 0; i < x.length; i++) {
+                    // txt += x[i].childNodes[0].nodeValue + "<br>";
+                    document.getElementById("question").innerHTML = x[i].childNodes[0].nodeValue;
+                    document.getElementById("option1").innerHTML = op1[i].childNodes[0].nodeValue;
+                    document.getElementById("option2").innerHTML = op2[i].childNodes[0].nodeValue;
+                    document.getElementById("option3").innerHTML = op3[i].childNodes[0].nodeValue;
+                    document.getElementById("option4").innerHTML = op4[i].childNodes[0].nodeValue;
+
+                }
+            }
+            // function next() {
+            //     if (i < x.length - 1) {
+            //         i++;
+            //         myFunction();
+            //     }
+            // }
+
+            // function previous() {
+            //     if (i > 0) {
+            //         i--;
+            //         myFunction();
+            //     }
+                //   document.getElementById("question").innerHTML = txt;
+            // } --> -->
+
+        </script>
+        <!-- jQuery library -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="assets/js/bootstrap.js"></script>
+        <!-- Slick slider -->
+        <script type="text/javascript" src="assets/js/slick.js"></script>
+        <!-- Counter -->
+        <script type="text/javascript" src="assets/js/waypoints.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+        <!-- Mixit slider -->
+        <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+        <!-- Add fancyBox -->
+        <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

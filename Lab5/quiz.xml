@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl" ?>
+<quiz>
+  <question>
+    <number>Q1</number>
+    <ques>What does HTML stands for ?</ques>
+    <option1>Hyper Text Preprocessor</option1>
+    <option2>Hyper Text Markup Language</option2>
+    <option3>Hyper Text Multiple Language</option3>
+    <option4>Hyper Tool Multi Language</option4>
+  </question>
+  <question>
+    <number>Q2</number>
+    <ques>What does CSS stand for? </ques>
+    <option1>Common Style Sheet</option1>
+    <option2>Colorful Style Sheet</option2>
+    <option3>Computer Style Sheet</option3>
+    <option4>Cascading Style Sheet</option4>
+  </question>
+  <question>
+    <number>Q3</number>
+    <ques>What does PHP stand for?</ques>
+    <option1>A kind of spider</option1>
+    <option2>A computer that stores WWW files</option2>
+    <option3>A person who likes to look at websites</option3>
+    <option4>A software program that allows you to access sites on the World Wide Webß</option4>
+  </question>
+    <question>
+    <number>Q4</number>
+    <ques>What does CSS stand for? </ques>
+    <option1>Common Style Sheet</option1>
+    <option2>Colorful Style Sheet</option2>
+    <option3>Computer Style Sheet</option3>
+    <option4>Cascading Style Sheet</option4>
+  </question>
+  <question>
+    <number>Q5</number>
+    <ques>What does CSS stand for? </ques>
+    <option1>Common Style Sheet</option1>
+    <option2>Colorful Style Sheet</option2>
+    <option3>Computer Style Sheet</option3>
+    <option4>Cascading Style Sheet</option4>
+  </question>
+  <question>
+    <number>Q6</number>
+    <ques>What does CSS stand for? </ques>
+    <option1>Common Style Sheet</option1>
+    <option2>Colorful Style Sheet</option2>
+    <option3>Computer Style Sheet</option3>
+    <option4>Cascading Style Sheet</option4>
+  </question>
+  <question>
+    <number>Q7</number>
+    <ques>What does CSS stand for? </ques>
+    <option1>Common Style Sheet</option1>
+    <option2>Colorful Style Sheet</option2>
+    <option3>Computer Style Sheet</option3>
+    <option4>Cascading Style Sheet</option4>
+  </question>
+  <question>
+    <number>Q8</number>
+    <ques>What does CSS stand for? </ques>
+    <option1>Common Style Sheet</option1>
+    <option2>Colorful Style Sheet</option2>
+    <option3>Computer Style Sheet</option3>
+    <option4>Cascading Style Sheet</option4>
+  </question>
+
+</quiz>

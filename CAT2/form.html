@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up for Fest</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <form method="post" target="printxml.html" onsubmit="return validate()">
+        <h1>Sign up to Fest</h1>
+        <p>To be able to use all features of fest you will require an account. The form below will allow you to create a
+            new account if you don't have one yet.</p>
+
+        <!-- Name<br> -->
+        <input type="text" name="name" placeholder="Enter your Name"><br>
+        <!-- Email<br> -->
+        <input type="text" name="email" placeholder="Enter your Email"><br>
+        <!-- Retype email<br> -->
+        <input type="text" name="retype_email" placeholder="Retype Email"><br>
+        <!-- Create a password<br> -->
+        <input type="password" name="password" placeholder="Create a password"><br>
+        <!-- Retype password<br> -->
+        <input type="password" name="retype_password" placeholder="Retype Password"><br>
+
+        <!-- Enter your state<br> -->
+        <input type="text" name="state" placeholder="Enter your state"><br>
+
+        <!-- Enter your phone no<br> -->
+        <input type="text" name="phone" placeholder="Enter your phone no"><br>
+
+        <!-- Enter your age<br> -->
+        <input type="text" name="age" placeholder="Enter your age"><br>
+
+        <!-- Enter your address<br> -->
+        <input type="text" name="address" placeholder="Enter your address"><br>
+
+        <label>Gender:</label><br> 
+        <input type="radio" id="gender" name="gender" value="male"/> Male<br>  
+        <input type="radio" id="gender" name="gender" value="female"/>Female <br/>
+        <!-- <p>Please select gender</p> -->
+        <!-- <input type="radio" id="male" name="gender" value="male"> Male -->
+        <!-- <label for="male">MALE</label><br> -->
+        <!-- <input type="radio" id="female" name="gender" value="female"> Female -->
+        <!-- <label for="female">FEMALE</label><br> -->
+        <!-- <input type="radio" id="others" name="gender" value="others"> Others -->
+        <!-- <label for="female">OTHERS</label><br> <br> -->
+
+        <label for="university">Select your University</label> <br>
+        <select name="university id=" university><br>
+            <option value="CU">Christ University</option>
+            <option value="VIPS">VIPS</option>
+            <option value="DU">Delhi University</option>
+        </select> <br>
+
+        <label for="branch">Choose your branch</label> <br>
+        <select name="branch" id="branch"> <br>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="CE">Construction Engineering</option>
+            <option value="EE">Electrical Engineering</option>
+            <option value="AE">Aeronautical Engineering</option>
+        </select> <br> <br> <br>
+
+        <label>
+            <input type="checkbox" name="terms">By signing up to the fest you agree to your
+            <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+        </label>
+
+        <button id="submitButton">submit</button>
+        <button type="button" onclick="download(this.form)" id="submitButton">Download</button>
+
+    </form>
+</body>
+
+</html>
