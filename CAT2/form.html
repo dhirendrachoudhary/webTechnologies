@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <form method="post" target="printxml.html" onsubmit="return validate()">
         <h1>Sign up to Fest</h1>
         <p>To be able to use all features of fest you will require an account. The form below will allow you to create a
@@ -37,17 +36,12 @@
         <!-- Enter your address<br> -->
         <input type="text" name="address" placeholder="Enter your address"><br>
 
-        <label>Gender:</label><br> 
-        <input type="radio" id="gender" name="gender" value="male"/> Male<br>  
-        <input type="radio" id="gender" name="gender" value="female"/>Female <br/>
-        <!-- <p>Please select gender</p> -->
-        <!-- <input type="radio" id="male" name="gender" value="male"> Male -->
-        <!-- <label for="male">MALE</label><br> -->
-        <!-- <input type="radio" id="female" name="gender" value="female"> Female -->
-        <!-- <label for="female">FEMALE</label><br> -->
-        <!-- <input type="radio" id="others" name="gender" value="others"> Others -->
-        <!-- <label for="female">OTHERS</label><br> <br> -->
-
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="gender" name="gender" value="male"/>Male<br>
+            <input type="radio" id="gender" name="gender" value="female"/>Female <br/>
+    
+        </div>
         <label for="university">Select your University</label> <br>
         <select name="university id=" university><br>
             <option value="CU">Christ University</option>

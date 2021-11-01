@@ -3,18 +3,29 @@ function validate() {
     result += validateName();
     result += validateEmail();
     result += validatePassword();
+    result += validateAge();
     result += validateTerms();
-
     if (result == "") return true;
-
     alert("Validation Result:\n\n" + result);
     return false;
 }
 
 function validateName() {
     var name = document.getElementsByName("name")[0].value;
-    if (name.length <= 3)
-        return "Name should be at least three characters.\n";
+    var letters = /^[A-Za-z]+$/;
+    if (name.match(letters)) {
+        // return "";
+    }
+    else {
+        return "Name shouldn't have numbers.\n";
+    }
+}
+
+
+function validateAge() {
+    var age = document.getElementsByName("age")[0].value;
+    if (age < 0)
+        return "Age shouldn't be negative.\n";
     return "";
 }
 
@@ -22,8 +33,8 @@ function validatePassword() {
     var password = valueOf("password");
     var retype = valueOf("retype_password");
 
-    if (password.length <= 6)
-        return "Password should be at least 6 characters.\n";
+    if (password.length < 10)
+        return "Password should be at least 10 characters.\n";
 
     if (password != retype)
         return "Passwords do not match.\n";
@@ -89,11 +100,8 @@ function fromToXml(form) {
 
 
 function download(frm) {
-
     var data = fromToXml(frm);
     console.log(data);
     // data.save("tempData.xml");
-
-
-       downloadData("text/xml",data,"data.xml");
+    downloadData("text/xml", data, "data.xml");
 }
