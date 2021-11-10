@@ -1,30 +1,18 @@
-# PHP-MYSQL CRUD Operations!
+CHRIST (Deemed to be university), Bangalore wants to store their student
+information in MYSQL Database. The name of the database is ‘christ’ and table
+name should be ‘stuinfo’.The student information table consists of stu-id, stu-
+name, age, gender, course and address.
+Write a PHP code to perform the following operations with proper validations:
+ Insert
+ Update
+ Delete
+ Search the particular student based on their id
+ Display the student id and name whose course is MCA
+Add the github link also for reference.
 
-- git clone the repository
-
-  Create Database:
-
-- create database name "collegedb"
-- create table using given below sql statement
-
-```sh
-CREATE TABLE `students` (
-`id` int(11) NOT NULL AUTO_INCREMENT,
-`first_name` varchar(30) NOT NULL,
-`last_name` varchar(30) DEFAULT NULL,
-`gender` varchar(10) DEFAULT NULL,
-`email` varchar(50) DEFAULT NULL,
-`course` varchar(20) DEFAULT NULL,
-PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
-```
-
-### Run the Project
-
-Run the localhost (Apache service)
-point to the:
-
-```sh
-http://localhost/crud
-
-```
+Evaluation Criteria Total: 50 Marks
+DB creation: 10 Marks
+Insert Operation: 10 Marks
+Update Operation: 10 Marks
+Delete Record: 10 Marks
+Search &amp; Display Record: 10 Marks
